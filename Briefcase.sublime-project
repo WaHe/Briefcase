@@ -1,0 +1,36 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "."
+		}
+	],
+	"build_systems":
+	[
+		{
+			"name": "Briefcase (LOVE 2D)",
+		    "selector": "source.lua",
+		    "windows":
+		    {
+		    	"shell": true,
+		    	"cmd": ["C:/Program Files/LOVE/love.exe", "$project_path"]
+		    },
+		    "osx": 
+		    {
+		    	"cmd": ["/Applications/love.app/Contents/MacOS/love", "$project_path"]
+		    },
+		    "linux":
+		    {
+		    	"cmd": ["love", "$project_path"]
+		    }
+		}
+	],
+	"settings":
+	{
+		"rulers":
+		[
+			80
+		]
+	}
+}
